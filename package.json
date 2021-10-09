@@ -1,0 +1,24 @@
+{
+  "name": "main1",
+  "version": "1.0.0",
+  "description": "main.js主要是用来提取json文件的数据，然后绘制表格。\r （用nodejs使用终端打开，后输入node main.js,即可生成svg图片。）",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjinyu1999/genreg.git"
+  },
+  "author": "jinyu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjinyu1999/genreg/issues"
+  },
+  "homepage": "https://github.com/sjinyu1999/genreg#readme",
+  "keywords": [
+    "js",
+    "nodejs",
+    "svg"
+  ]
+}
