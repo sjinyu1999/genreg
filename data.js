@@ -1,12 +1,9 @@
 function data() {
-    const { reg } = require("./input");
     let svgHeader = `
     <svg xmlns="http://www.w3.org/2000/svg" width="810" height="150" viewBox="-8 0 810 150"  xmlns:xlink="http://www.w3.org/1999/xlink">`;
     let svgFooter = `</svg>`;
     let svgContent = ``;
-
-    //var input= require('./input.js');
-
+   
     Hsl();
     wenzi1();
     wenzi2();
@@ -32,9 +29,9 @@ function data() {
     function KuangJia1() {
         let x1 = 801;
         let sum = 0;
-        for (i = 0; i < reg.reg.length; i++) {
-            sum += reg.reg[i].bits;
-            if (reg.reg[i].bits == 1) {
+        for (i = 0; i < reg.length; i++) {
+            sum += reg[i].bits;
+            if (reg[i].bits == 1) {
                 svgContent += `<line x1="${x1 - 50}" y1="80" x2="${x1 - 50}" y2="115" stroke="black" stroke-width="1"/>`;
                 x1 -= 50;
                 //console.log(x1);
@@ -60,12 +57,12 @@ function data() {
     function KuangJia2() {
         let x1 = 801;
         let sum = 0;
-        for (i = 0; i < reg.reg.length; i++) {
-            sum += reg.reg[i].bits;
+        for (i = 0; i < reg.length; i++) {
+            sum += reg[i].bits;
             if (sum > 16) {
                 m = sum - 16;
                 j = i;
-                if (reg.reg[j].bits == 1) {
+                if (reg[j].bits == 1) {
                     svgContent += `<line x1="${x1 - 50}" y1="20" x2="${x1 - 50}" y2="55" stroke="black" stroke-width="1"/>`;
                     x1 -= 50;
                     //	console.log(x1);
@@ -92,21 +89,21 @@ function data() {
         let y = 92;
         let sum = 0;
         let sum1 = 0;
-        for (i = 0; i < reg.reg.length; i++) {
-            sum += reg.reg[i].bits;
-            sum1 = sum - reg.reg[i].bits;
+        for (i = 0; i < reg.length; i++) {
+            sum += reg[i].bits;
+            sum1 = sum - reg[i].bits;
             //console.log("sum="+sum);
             //console.log("sum1="+sum1);
             if (sum <= 16) {
                 x = 801 - (sum + sum1) * 50 / 2;
                 //console.log("x:"+x);			
-                svgContent += `<g transform="translate(${x},${y})"><text y="6" font-size="13" style='dominant-baseline:middle;text-anchor:middle;'>${reg.reg[i].name} </text></g>`
-                svgContent += `<g transform="translate(${x},${y + 24})"><text y="6" font-size="12" style='dominant-baseline:middle;text-anchor:middle;'>${reg.reg[i].attr} </text></g>`
+                svgContent += `<g transform="translate(${x},${y})"><text y="6" font-size="13" style='dominant-baseline:middle;text-anchor:middle;'>${reg[i].name} </text></g>`
+                svgContent += `<g transform="translate(${x},${y + 24})"><text y="6" font-size="12" style='dominant-baseline:middle;text-anchor:middle;'>${reg[i].attr} </text></g>`
             } else if (sum > 16 && sum <= 32) {
                 x = 801 - ((sum - 16) + (sum1 - 16)) * 50 / 2;
                 //console.log("x:"+x);
-                svgContent += `<g transform="translate(${x},${y - 60})"><text y="6" font-size="13" style='dominant-baseline:middle;text-anchor:middle;'>${reg.reg[i].name} </text></g>`
-                svgContent += `<g transform="translate(${x},${y - 60 + 24})"><text y="6" font-size="12" style='dominant-baseline:middle;text-anchor:middle;'>${reg.reg[i].attr} </text></g>`
+                svgContent += `<g transform="translate(${x},${y - 60})"><text y="6" font-size="13" style='dominant-baseline:middle;text-anchor:middle;'>${reg[i].name} </text></g>`
+                svgContent += `<g transform="translate(${x},${y - 60 + 24})"><text y="6" font-size="12" style='dominant-baseline:middle;text-anchor:middle;'>${reg[i].attr} </text></g>`
             } else {
                 return 0;
             }
@@ -118,9 +115,9 @@ function data() {
         let y = 68;
         let sum = 0;
         let sum1 = 0;
-        for (i = 0; i < reg.reg.length; i++) {
-            sum += reg.reg[i].bits;
-            sum1 = sum - reg.reg[i].bits;
+        for (i = 0; i < reg.length; i++) {
+            sum += reg[i].bits;
+            sum1 = sum - reg[i].bits;
             //console.log("sum="+sum);
             //console.log("sum1="+sum1);
             if (sum <= 16) {
@@ -154,11 +151,12 @@ function data() {
         let x = 801;
         let y = 20;
         let sum = 0;
-        for (i = 0; i < reg.reg.length; i++) {
-            //console.log(reg.reg.length);
-            let m = reg.reg[i].type;
-            let n = reg.reg[i].bits;
-            sum += reg.reg[i].bits;
+        //console.log(reg.length);
+        for (i = 0; i < reg.length; i++) {
+            
+            let m = reg[i].type;
+            let n = reg[i].bits;
+            sum += reg[i].bits;
             //console.log(n);
             let width = n * 50;
             //console.log(width);

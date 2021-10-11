@@ -20,5 +20,8 @@
     "js",
     "nodejs",
     "svg"
-  ]
+  ],
+  "dependencies": {
+    "react-scripts": "3.4.0"
+  }
 }
