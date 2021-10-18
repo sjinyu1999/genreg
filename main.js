@@ -5,39 +5,22 @@ function getAllArgs() {
 function getPath(string) {
      let args = getAllArgs();
      if (args.length === 0) {
-          return "./input.js";
+          return "please enter node main.js  -i 指定文件夹 -o 输出文件夹";
      }
      if (args.length > 0) {
-          for (let i = 0; i < args.length; i++) {
-               if (args[i].startsWith(string)) {
-                    return args[i + 1]
+          for (let p = 0; p < args.length; p++) {
+               if (args[p].startsWith(string)) {
+                    return args[p + 1];
                }
           }
      }
 }
 console.log(getAllArgs());
 console.log(getPath("-i"));
-console.log(getPath("-o"));
 
-function test1() {
-     const { input } = require("./input.js");
-     //console.log({input});
-     //var reg = input("3.CFGR.json");
-     var reg = input(getPath("-i"));
-     //console.log("reg=",reg.reg);
-     return reg.reg;
-}
-//console.log(test1());
-function test2() {
-     const { output } = require('./output.js');
-     output(getPath("-o"));
-}
-function test() {
-     reg = test1();
-     //console.log("reg=",reg);
-     var data = require('./data.js');
-     module.exports = data;
-     test2();
-     // module.exports = output;
-}
-test();
+const input = require("./input.js");
+const data = require('./data.js');
+const output = require('./output.js');
+res = input(getPath("-i"));
+data(res);
+output(svg);      

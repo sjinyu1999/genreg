@@ -22,6 +22,7 @@
     "svg"
   ],
   "dependencies": {
+    "fs-extra": "^10.0.0",
     "react-scripts": "3.4.0"
   }
 }
