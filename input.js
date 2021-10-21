@@ -17,6 +17,7 @@ function input(dir) {
     return list;
   }
   var res = listFile(dir);
+  //console.log(res);
 return res;
 }
 module.exports = input;

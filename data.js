@@ -1,9 +1,10 @@
 function data(reg) {
-    //var fs = require("fs");
-    // var reg = [];
-    // res.forEach(function (filename) {
-    //     reg = JSON.parse(fs.readFileSync(filename));
-    //     reg = reg.reg;
+    var fs = require("fs");
+    var reg = [];
+    let svgs=[];
+    res.forEach(function (filename) {
+        reg = JSON.parse(fs.readFileSync(filename));
+        reg = reg.reg;
         let svgHeader = `
     <svg xmlns="http://www.w3.org/2000/svg" width="810" height="150" viewBox="-8 0 810 150"  xmlns:xlink="http://www.w3.org/1999/xlink">`;
         let svgFooter = `</svg>`;
@@ -178,7 +179,12 @@ function data(reg) {
             }
         }
         svg = svgHeader + svgContent + svgFooter;
-        //console.log(svg);
-    // });
+        
+       // console.log(svg);
+            svgs.push(svg);
+            //console.log(svgs);
+        //return svgs;
+    });
+    return svgs;
 }
 module.exports = data;

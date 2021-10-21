@@ -5,7 +5,7 @@ function getAllArgs() {
 function getPath(string) {
      let args = getAllArgs();
      if (args.length === 0) {
-          return "please enter node main.js  -i 指定文件夹";
+          return "please enter node main.js  -i 指定文件夹 -o 输出文件夹";
      }
      if (args.length > 0) {
           for (let p = 0; p < args.length; p++) {
@@ -22,16 +22,7 @@ const input = require("./input.js");
 const data = require('./data.js');
 const output = require('./output.js');
 const fs = require("fs");
-const path = require("path");
 res = input(getPath("-i"));
-var reg = [];
-res.forEach(function (filename) {
-     reg = JSON.parse(fs.readFileSync(filename));
-     reg = reg.reg;
-     data(reg);
-     //console.log(svg);
-     dirname = `svg文件/${filename}`;
-     dirname = path.dirname(dirname);
-     result = `${dirname}/${path.basename(filename, '.json')}.svg`;
-     output(svg);
-});
+svgs=data(res);
+//console.log(svgs);
+output(svgs);
