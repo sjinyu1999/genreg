@@ -1,0 +1,6 @@
+#define	I2C_TAR_ADDR_Pos                                    (9)
+#define	I2C_TAR_ADDR                                        (0x00U << I2C_TAR_ADDR_Pos)
+#define	I2C_TAR_GC_Pos                                      (10)
+#define	I2C_TAR_GC                                          (0x01U << I2C_TAR_GC_Pos)
+#define	I2C_TAR_SPECIAL_Pos                                 (11)
+#define	I2C_TAR_SPECIAL                                     (0x02U << I2C_TAR_SPECIAL_Pos)

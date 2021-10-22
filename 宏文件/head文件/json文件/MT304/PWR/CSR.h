@@ -1,0 +1,8 @@
+#define	PWR_CSR_WUF_Pos                                     (0)
+#define	PWR_CSR_WUF                                         (0x00U << PWR_CSR_WUF_Pos)
+#define	PWR_CSR_SBF_Pos                                     (1)
+#define	PWR_CSR_SBF                                         (0x01U << PWR_CSR_SBF_Pos)
+#define	PWR_CSR_PVDO_Pos                                    (2)
+#define	PWR_CSR_PVDO                                        (0x02U << PWR_CSR_PVDO_Pos)
+#define	PWR_CSR_EWUP_Pos                                    (8)
+#define	PWR_CSR_EWUP                                        (0x04U << PWR_CSR_EWUP_Pos)

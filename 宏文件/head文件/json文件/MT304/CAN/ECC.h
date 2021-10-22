@@ -1,0 +1,6 @@
+#define	CAN_ECC_SEG_Pos                                     (4)
+#define	CAN_ECC_SEG                                         (0x00U << CAN_ECC_SEG_Pos)
+#define	CAN_ECC_DIR_Pos                                     (5)
+#define	CAN_ECC_DIR                                         (0x01U << CAN_ECC_DIR_Pos)
+#define	CAN_ECC_ERRC_Pos                                    (7)
+#define	CAN_ECC_ERRC                                        (0x02U << CAN_ECC_ERRC_Pos)

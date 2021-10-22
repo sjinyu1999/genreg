@@ -1,0 +1,6 @@
+#define	AES_SR_CCF_Pos                                      (0)
+#define	AES_SR_CCF                                          (0x00U << AES_SR_CCF_Pos)
+#define	AES_SR_RDERR_Pos                                    (1)
+#define	AES_SR_RDERR                                        (0x01U << AES_SR_RDERR_Pos)
+#define	AES_SR_WRERR_Pos                                    (2)
+#define	AES_SR_WRERR                                        (0x02U << AES_SR_WRERR_Pos)

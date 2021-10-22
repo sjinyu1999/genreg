@@ -1,0 +1,8 @@
+#define	UART_CSR_TXC_Pos                                    (0)
+#define	UART_CSR_TXC                                        (0x00U << UART_CSR_TXC_Pos)
+#define	UART_CSR_RXAVL_Pos                                  (1)
+#define	UART_CSR_RXAVL                                      (0x01U << UART_CSR_RXAVL_Pos)
+#define	UART_CSR_TXFULL_Pos                                 (2)
+#define	UART_CSR_TXFULL                                     (0x02U << UART_CSR_TXFULL_Pos)
+#define	UART_CSR_TXEPT_Pos                                  (3)
+#define	UART_CSR_TXEPT                                      (0x03U << UART_CSR_TXEPT_Pos)

@@ -1,0 +1,6 @@
+#define	FLASH_ACR_LATENCY_Pos                               (2)
+#define	FLASH_ACR_LATENCY                                   (0x00U << FLASH_ACR_LATENCY_Pos)
+#define	FLASH_ACR_HLFCYA_Pos                                (3)
+#define	FLASH_ACR_HLFCYA                                    (0x01U << FLASH_ACR_HLFCYA_Pos)
+#define	FLASH_ACR_PRFTBE_Pos                                (4)
+#define	FLASH_ACR_PRFTBE                                    (0x02U << FLASH_ACR_PRFTBE_Pos)

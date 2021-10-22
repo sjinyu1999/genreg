@@ -1,0 +1,8 @@
+#define	FLASH_SR_BUSY_Pos                                   (0)
+#define	FLASH_SR_BUSY                                       (0x00U << FLASH_SR_BUSY_Pos)
+#define	FLASH_SR_PGERR_Pos                                  (2)
+#define	FLASH_SR_PGERR                                      (0x02U << FLASH_SR_PGERR_Pos)
+#define	FLASH_SR_WRPRTERR_Pos                               (4)
+#define	FLASH_SR_WRPRTERR                                   (0x04U << FLASH_SR_WRPRTERR_Pos)
+#define	FLASH_SR_EOP_Pos                                    (5)
+#define	FLASH_SR_EOP                                        (0x05U << FLASH_SR_EOP_Pos)

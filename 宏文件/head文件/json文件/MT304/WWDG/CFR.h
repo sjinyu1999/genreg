@@ -1,0 +1,6 @@
+#define	WWDG_CFR_W_Pos                                      (6)
+#define	WWDG_CFR_W                                          (0x00U << WWDG_CFR_W_Pos)
+#define	WWDG_CFR_WDGTB_Pos                                  (8)
+#define	WWDG_CFR_WDGTB                                      (0x01U << WWDG_CFR_WDGTB_Pos)
+#define	WWDG_CFR_EWI_Pos                                    (9)
+#define	WWDG_CFR_EWI                                        (0x02U << WWDG_CFR_EWI_Pos)

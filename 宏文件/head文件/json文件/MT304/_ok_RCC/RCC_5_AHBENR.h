@@ -1,0 +1,8 @@
+#define	_ok_RCC_RCC_5_AHBENR_DMA1_Pos                       (0)
+#define	_ok_RCC_RCC_5_AHBENR_DMA1                           (0x00U << _ok_RCC_RCC_5_AHBENR_DMA1_Pos)
+#define	_ok_RCC_RCC_5_AHBENR_SRAM_Pos                       (2)
+#define	_ok_RCC_RCC_5_AHBENR_SRAM                           (0x02U << _ok_RCC_RCC_5_AHBENR_SRAM_Pos)
+#define	_ok_RCC_RCC_5_AHBENR_FLIEN_Pos                      (4)
+#define	_ok_RCC_RCC_5_AHBENR_FLIEN                          (0x04U << _ok_RCC_RCC_5_AHBENR_FLIEN_Pos)
+#define	_ok_RCC_RCC_5_AHBENR_CRC._Pos                       (6)
+#define	_ok_RCC_RCC_5_AHBENR_CRC.                           (0x06U << _ok_RCC_RCC_5_AHBENR_CRC._Pos)

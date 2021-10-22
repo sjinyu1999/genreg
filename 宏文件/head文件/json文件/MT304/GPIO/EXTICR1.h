@@ -1,0 +1,8 @@
+#define	GPIO_EXTICR1_EXTI4_Pos                              (3)
+#define	GPIO_EXTICR1_EXTI4                                  (0x00U << GPIO_EXTICR1_EXTI4_Pos)
+#define	GPIO_EXTICR1_EXTI5_Pos                              (7)
+#define	GPIO_EXTICR1_EXTI5                                  (0x01U << GPIO_EXTICR1_EXTI5_Pos)
+#define	GPIO_EXTICR1_EXTI6_Pos                              (11)
+#define	GPIO_EXTICR1_EXTI6                                  (0x02U << GPIO_EXTICR1_EXTI6_Pos)
+#define	GPIO_EXTICR1_EXTI7_Pos                              (15)
+#define	GPIO_EXTICR1_EXTI7                                  (0x03U << GPIO_EXTICR1_EXTI7_Pos)

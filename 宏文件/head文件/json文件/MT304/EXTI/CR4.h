@@ -1,0 +1,8 @@
+#define	EXTI_CR4_EXTI12_Pos                                 (3)
+#define	EXTI_CR4_EXTI12                                     (0x00U << EXTI_CR4_EXTI12_Pos)
+#define	EXTI_CR4_EXTI13_Pos                                 (7)
+#define	EXTI_CR4_EXTI13                                     (0x01U << EXTI_CR4_EXTI13_Pos)
+#define	EXTI_CR4_EXTI14_Pos                                 (11)
+#define	EXTI_CR4_EXTI14                                     (0x02U << EXTI_CR4_EXTI14_Pos)
+#define	EXTI_CR4_EXTI15_Pos                                 (15)
+#define	EXTI_CR4_EXTI15                                     (0x03U << EXTI_CR4_EXTI15_Pos)

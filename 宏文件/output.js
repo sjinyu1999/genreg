@@ -42,17 +42,16 @@ function output(format) {
           }
      }
      for (i = 0; i < format.length, i < result.length; i++) {
-          //console.log(result[i]);
           format1 = format[i].toString();
           format1 = format1.replace(/,/g, "");
-          console.log(format1);
-          console.log(result[i]);
+          //console.log(format1);
+          //console.log(result[i]);
           fs.writeFile(result[i], format1, function (err) {
                if (err) {
-                    //console.info("write false!!!");
+                    console.info("write false!!!");
                     return console.error(err);
                }
-               //console.info("write success!!!");
+               console.info("write success!!!");
           });
      }
 }

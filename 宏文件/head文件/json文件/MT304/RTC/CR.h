@@ -1,0 +1,6 @@
+#define	RTC_CR_SECIE_Pos                                    (0)
+#define	RTC_CR_SECIE                                        (0x00U << RTC_CR_SECIE_Pos)
+#define	RTC_CR_ALRIE_Pos                                    (1)
+#define	RTC_CR_ALRIE                                        (0x01U << RTC_CR_ALRIE_Pos)
+#define	RTC_CR_OWIE_Pos                                     (2)
+#define	RTC_CR_OWIE                                         (0x02U << RTC_CR_OWIE_Pos)

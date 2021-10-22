@@ -1,0 +1,6 @@
+#define	CAN_TXID1_DLC_Pos                                   (3)
+#define	CAN_TXID1_DLC                                       (0x00U << CAN_TXID1_DLC_Pos)
+#define	CAN_TXID1_RTR_Pos                                   (4)
+#define	CAN_TXID1_RTR                                       (0x01U << CAN_TXID1_RTR_Pos)
+#define	CAN_TXID1_ID[2:0]_Pos                               (7)
+#define	CAN_TXID1_ID[2:0]                                   (0x02U << CAN_TXID1_ID[2:0]_Pos)

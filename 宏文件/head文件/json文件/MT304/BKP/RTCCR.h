@@ -1,0 +1,8 @@
+#define	BKP_RTCCR_CAL_Pos                                   (6)
+#define	BKP_RTCCR_CAL                                       (0x00U << BKP_RTCCR_CAL_Pos)
+#define	BKP_RTCCR_CCO_Pos                                   (7)
+#define	BKP_RTCCR_CCO                                       (0x01U << BKP_RTCCR_CCO_Pos)
+#define	BKP_RTCCR_ASOE_Pos                                  (8)
+#define	BKP_RTCCR_ASOE                                      (0x02U << BKP_RTCCR_ASOE_Pos)
+#define	BKP_RTCCR_ASOS_Pos                                  (9)
+#define	BKP_RTCCR_ASOS                                      (0x03U << BKP_RTCCR_ASOS_Pos)

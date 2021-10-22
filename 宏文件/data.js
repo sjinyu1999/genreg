@@ -10,8 +10,12 @@ function data(reg) {
         IPnanedir = path.dirname(filename);
         IPnane = path.basename(IPnanedir);
         Registername = path.basename(filename, '.json');
+        if(Registername.indexOf(".")==1){
         Registername = path.extname(Registername);
         Registername = Registername.split('.')[1];
+    }else{
+        Registername = Registername;
+     }
         reg = JSON.parse(fs.readFileSync(filename));
         reg = reg.reg;
         /*     channal.push(reg);
@@ -35,21 +39,16 @@ function data(reg) {
             bitmask = bitmask.toString(16);
             bitname = reg[i].name;
             
-            if (bitname = reg[i].name && bitname.indexOf(bitname) > -1 && bitname != "RES") {
+            if (bitname = reg[i].name && bitname.indexOf(bitname) > -1 && bitname != "RES"&&bitname != "RES.") {
                 bitname = reg[i].name;
                 right = i.toString(16);
                 right = "(0x0" + right.toUpperCase() + "U";
                 bitname = reg[i].name;
                 Rbname = Registername + "_" + bitname;
                 define = '#define\t';
-                //head = define + IPnane + "_" + Rbname + "_Pos" +  "\t\t\t\t(" + (sum - 1) + ")\n";
                 head1= define + IPnane + "_" + Rbname + "_Pos";
-                //console.log(head1.length);
                 head2= "(" + (sum - 1) + ")\n";
                 head=head1.toString().padEnd(60)+head2;
-                //left1 = define + IPnane + "_" + Registername + "_" + bitname + "\t\t\t\t(0x0" + ((bitmask).toString(16) + "U" + " << " + IPnane + "_" + Registername + "_" + bitname + "_Pos)");
-                //left = define + IPnane + "_" + Rbname + "\t\t\t\t" + right + " << " + IPnane + "_" + Rbname + "_Pos)\n";
-                //left2 = define + IPnane + "_" + Registername + "_" + bitname + (i) + "\t\t\t\t" + right + " << " + IPnane + "_" + Registername + "_" + bitname + "_Pos)";*/
                 left1= define + IPnane + "_" + Rbname;
                 left2= right + " << " + IPnane + "_" + Rbname + "_Pos)\n";
                 left=left1.toString().padEnd(60)+left2;

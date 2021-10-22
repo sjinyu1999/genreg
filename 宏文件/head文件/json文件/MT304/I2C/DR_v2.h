@@ -1,0 +1,8 @@
+#define	I2C_DR_v2_DAT_Pos                                   (7)
+#define	I2C_DR_v2_DAT                                       (0x00U << I2C_DR_v2_DAT_Pos)
+#define	I2C_DR_v2_CMD_Pos                                   (8)
+#define	I2C_DR_v2_CMD                                       (0x01U << I2C_DR_v2_CMD_Pos)
+#define	I2C_DR_v2_STOP_Pos                                  (9)
+#define	I2C_DR_v2_STOP                                      (0x02U << I2C_DR_v2_STOP_Pos)
+#define	I2C_DR_v2_RESTART_Pos                               (10)
+#define	I2C_DR_v2_RESTART                                   (0x03U << I2C_DR_v2_RESTART_Pos)

@@ -1,0 +1,6 @@
+#define	ADC_CHnDR_DATA_Pos                                  (15)
+#define	ADC_CHnDR_DATA                                      (0x00U << ADC_CHnDR_DATA_Pos)
+#define	ADC_CHnDR_OVERRUN_Pos                               (20)
+#define	ADC_CHnDR_OVERRUN                                   (0x02U << ADC_CHnDR_OVERRUN_Pos)
+#define	ADC_CHnDR_VALID_Pos                                 (21)
+#define	ADC_CHnDR_VALID                                     (0x03U << ADC_CHnDR_VALID_Pos)

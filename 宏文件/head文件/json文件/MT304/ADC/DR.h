@@ -1,0 +1,6 @@
+#define	ADC_DR_DATA_Pos                                     (15)
+#define	ADC_DR_DATA                                         (0x00U << ADC_DR_DATA_Pos)
+#define	ADC_DR_OVERRUN_Pos                                  (20)
+#define	ADC_DR_OVERRUN                                      (0x02U << ADC_DR_OVERRUN_Pos)
+#define	ADC_DR_VALID_Pos                                    (21)
+#define	ADC_DR_VALID                                        (0x03U << ADC_DR_VALID_Pos)

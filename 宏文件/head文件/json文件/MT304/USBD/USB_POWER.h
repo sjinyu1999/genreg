@@ -1,0 +1,6 @@
+#define	USBD_USB_POWER_SUSPEN_Pos                           (0)
+#define	USBD_USB_POWER_SUSPEN                               (0x00U << USBD_USB_POWER_SUSPEN_Pos)
+#define	USBD_USB_POWER_SUSP_Pos                             (1)
+#define	USBD_USB_POWER_SUSP                                 (0x01U << USBD_USB_POWER_SUSP_Pos)
+#define	USBD_USB_POWER_WKUP_Pos                             (3)
+#define	USBD_USB_POWER_WKUP                                 (0x03U << USBD_USB_POWER_WKUP_Pos)
