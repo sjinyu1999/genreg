@@ -96,6 +96,15 @@ function data(reg) {
             let sum = 0;
             let sum1 = 0;
             for (i = 0; i < reg.length; i++) {
+                let attr=[];
+                if(reg[i].attr==undefined){
+                    attr=" ";
+                }
+                else{
+                    attr=reg[i].attr;
+                }
+                //console.log("attr="+attr);
+                
                 sum += reg[i].bits;
                 sum1 = sum - reg[i].bits;
                 //console.log("sum="+sum);
@@ -104,12 +113,12 @@ function data(reg) {
                     x = 801 - (sum + sum1) * 50 / 2;
                     //console.log("x:"+x);			
                     svgContent += `<g transform="translate(${x},${y})"><text y="6" font-size="13" style='dominant-baseline:middle;text-anchor:middle;'>${reg[i].name} </text></g>`
-                    svgContent += `<g transform="translate(${x},${y + 24})"><text y="6" font-size="12" style='dominant-baseline:middle;text-anchor:middle;'>${reg[i].attr} </text></g>`
+                    svgContent += `<g transform="translate(${x},${y + 24})"><text y="6" font-size="12" style='dominant-baseline:middle;text-anchor:middle;'>${attr} </text></g>`
                 } else if (sum > 16 && sum <= 32) {
                     x = 801 - ((sum - 16) + (sum1 - 16)) * 50 / 2;
                     //console.log("x:"+x);
                     svgContent += `<g transform="translate(${x},${y - 60})"><text y="6" font-size="13" style='dominant-baseline:middle;text-anchor:middle;'>${reg[i].name} </text></g>`
-                    svgContent += `<g transform="translate(${x},${y - 60 + 24})"><text y="6" font-size="12" style='dominant-baseline:middle;text-anchor:middle;'>${reg[i].attr} </text></g>`
+                    svgContent += `<g transform="translate(${x},${y - 60 + 24})"><text y="6" font-size="12" style='dominant-baseline:middle;text-anchor:middle;'>${attr} </text></g>`
                 } else {
                     return 0;
                 }

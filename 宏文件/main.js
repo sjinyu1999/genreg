@@ -24,4 +24,5 @@ const output = require('./output.js');
 const fs = require("fs");
 res = input(getPath("-i"));
 define2=data(res);
+//console.log(define2);
 output(define2);

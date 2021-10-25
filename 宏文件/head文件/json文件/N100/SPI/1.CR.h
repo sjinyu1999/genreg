@@ -1,8 +1,0 @@
-#define	SPI_CR_EN_Pos                                       (0)
-#define	SPI_CR_EN                                           (0x00U << SPI_CR_EN_Pos)
-#define	SPI_CR_DMA_Pos                                      (1)
-#define	SPI_CR_DMA                                          (0x01U << SPI_CR_DMA_Pos)
-#define	SPI_CR_TXEN_Pos                                     (2)
-#define	SPI_CR_TXEN                                         (0x02U << SPI_CR_TXEN_Pos)
-#define	SPI_CR_RXEN_Pos                                     (3)
-#define	SPI_CR_RXEN                                         (0x03U << SPI_CR_RXEN_Pos)
