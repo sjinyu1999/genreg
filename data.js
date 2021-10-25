@@ -1,7 +1,7 @@
 function data(reg) {
     var fs = require("fs");
     var reg = [];
-    let svgs=[];
+    let svgs = [];
     res.forEach(function (filename) {
         reg = JSON.parse(fs.readFileSync(filename));
         reg = reg.reg;
@@ -96,15 +96,15 @@ function data(reg) {
             let sum = 0;
             let sum1 = 0;
             for (i = 0; i < reg.length; i++) {
-                let attr=[];
-                if(reg[i].attr==undefined){
-                    attr=" ";
+                let attr = [];
+                if (reg[i].attr == undefined) {
+                    attr = " ";
                 }
-                else{
-                    attr=reg[i].attr;
+                else {
+                    attr = reg[i].attr;
                 }
                 //console.log("attr="+attr);
-                
+
                 sum += reg[i].bits;
                 sum1 = sum - reg[i].bits;
                 //console.log("sum="+sum);
@@ -188,10 +188,10 @@ function data(reg) {
             }
         }
         svg = svgHeader + svgContent + svgFooter;
-        
-       // console.log(svg);
-            svgs.push(svg);
-            //console.log(svgs);
+
+        // console.log(svg);
+        svgs.push(svg);
+        //console.log(svgs);
         //return svgs;
     });
     return svgs;
